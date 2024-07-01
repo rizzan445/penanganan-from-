@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir Pendaftaran Facebook</title>
+<link rel="stylesheet" type="text/css" href="rizzan.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Formulir Pendaftaran Facebook</h2>
+  <form id="registrationForm">
+    <label for="firstName">Nama Depan:</label>
+    <input type="text" id="firstName" name="firstName" required>
+    <label for="lastName">Nama Belakang:</label>
+    <input type="text" id="lastName" name="lastName" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <label for="confirmPassword">Konfirmasi Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+    <label for="dob">Tanggal Lahir:</label>
+    <input type="date" id="dob" name="dob" required>
+    <label for="gender">Jenis Kelamin:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Pilih jenis kelamin</option>
+      <option value="Laki-laki">Laki-laki</option>
+      <option value="Perempuan">Perempuan</option>
+      <option value="other">Lainnya</option>
+    </select>
+    <label for="phone">Nomor Telepon:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,}" title="Nomor telepon harus terdiri dari 10 digit atau lebih" required>
+    <input type="submit" value="Daftar">
+  </form>
+</div>
+
+<p id="info" class="error"></p>
+
+<script src="rizzan.js"></script>
+
+</body>
+</html>
